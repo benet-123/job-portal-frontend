@@ -1,0 +1,112 @@
+<div class="container">
+    <img src="./../../assets/logosimply.jpg" class="img1 text-center" alt="">
+
+    <h6 class="heading1">Fill your Basic details</h6>
+    <p class="p1">It takes only couple of minutes to get started</p>
+
+
+<div class="border border-black">
+    <form action="" class="p-3" [formGroup]=" detailsform">
+        <label for="">Full name <span class="text-danger">*</span></label>
+        <input type="text" formControlName="name" placeholder="Enter your name" class="form-control">
+        <div *ngIf="this. detailsform.get('name')?.errors && this.detailsform.get('name')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Email id <span class="text-danger">*</span></label>
+        <input type="email" formControlName="email" placeholder="Enter your email" class="form-control">
+        <div *ngIf="this. detailsform.get('email')?.errors && this.detailsform.get('email')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Address <span class="text-danger">*</span></label> <br>
+<textarea name="" id="" cols="30" formControlName="address" class="border border-black" rows="2"></textarea> <br>
+<div *ngIf="this. detailsform.get('address')?.errors && this.detailsform.get('address')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Password <span class="text-danger">*</span></label>
+        <input type="password" formControlName="pswd" placeholder="Enter your password" class="form-control ">
+        <div *ngIf="this. detailsform.get('pswd')?.errors && this.detailsform.get('pswd')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Mobile number <span class="text-danger">*</span></label>
+        <input type="text" formControlName="number" placeholder="Enter your number" class="form-control ">
+        <div *ngIf="this. detailsform.get('number')?.errors && this.detailsform.get('number')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Current location<span class="text-danger">*</span></label>
+        <input type="text" formControlName="location" placeholder="Enter your current location" class="form-control">
+        <div *ngIf="this. detailsform.get('location')?.errors && this.detailsform.get('location')?.touched"> <p class="text-danger">Required field</p> </div>
+
+        <label for="">Total Experience<span class="text-danger">*</span></label> <br>
+<input type="radio" name="u1" class="mt-3 me-2">Fresher
+
+<input type="radio" name="u1" class="mt-3 me-2">1-3 years
+<input type="radio" name="u1" class="mt-3 me-2">3-8 years
+<input type="radio" name="u1" class="mt-3 me-2">More than 8 years <br>
+
+
+<label for="">Key skills<span class="text-danger">*</span></label> <br>
+<input type="text" placeholder="Enter your key skills" class="form-control">
+
+<label for="">Preferred industry<span class="text-danger">*</span></label> <br>
+<input type="text" formControlName="industry" placeholder="Enter your industry " class="form-control ">
+<div *ngIf="this. detailsform.get('industry')?.errors && this.detailsform.get('industry')?.touched"> <p class="text-danger">Required field</p> </div>
+
+
+
+<label for="">Preferred department<span class="text-danger">*</span></label> <br>
+<input type="text" formControlName="department" placeholder="Enter your department " class="form-control">
+<div *ngIf="this. detailsform.get('department')?.errors && this.detailsform.get('department')?.touched"> <p class="text-danger">Required field</p> </div>
+
+
+<h5 class="heading2">Educational Details</h5>
+
+<label for="">Xth details <span class="text-danger">*</span></label>
+<input type="text" formControlName="tenth" placeholder="Enter your School" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('tenth')?.errors && this.detailsform.get('tenth')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" formControlName="ten" placeholder="Enter YOP" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('ten')?.errors && this.detailsform.get('ten')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" formControlName="te" placeholder="Enter your Mark" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('te')?.errors && this.detailsform.get('te')?.touched"> <p class="text-danger">Required field</p> </div>
+
+
+<label for="">XIIth details <span class="text-danger">*</span> </label>
+<input type="text"  formControlName="twelve" placeholder="Enter your School" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('twelve')?.errors && this.detailsform.get('twelve')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" placeholder="Enter YOP" formControlName="twe" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('twe')?.errors && this.detailsform.get('twe')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" formControlName="tw" placeholder="Enter your Mark" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('tw')?.errors && this.detailsform.get('tw')?.touched"> <p class="text-danger">Required field</p> </div>
+
+
+<label for="" >UG details <span class="text-danger">*</span> </label>
+<input type="text" formControlName="names" placeholder="Enter your University" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('names')?.errors && this.detailsform.get('names')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" placeholder="Enter YOP" formControlName="passout" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('passout')?.errors && this.detailsform.get('passout')?.touched"> <p class="text-danger">Required field</p> </div>
+
+<input type="text" formControlName="mark" placeholder="Enter your Mark" class="form-control" id="forms">
+<div *ngIf="this. detailsform.get('mark')?.errors && this.detailsform.get('mark')?.touched"> <p class="text-danger">Required field</p> </div>
+
+
+
+<label for="">PG details <span class="text-secondary">(Optional)</span></label>
+<input type="text" placeholder="Enter your University" class="form-control" id="forms">
+<input type="text" placeholder="Enter YOP" class="form-control" id="forms">
+<input type="text" placeholder="Enter your Mark" class="form-control" id="forms">
+
+
+<label for="">Upload your resume <span class="text-danger">*</span> </label> <br>
+<input type="file" class="mt-2 mb-2">
+
+<div class="text-center">
+    <button class="btn btn-success">SUBMIT</button>
+</div>
+
+
+
+    </form>
+
+</div>  
+</div>
+
+

@@ -1,0 +1,31 @@
+<section>
+    <div class="imgBx">
+<img src="./../../assets/logosimply.jpg" alt="">
+    </div>
+    <div class="contentBx">
+<div class="formBx">
+    <h2>LOGIN NOW</h2>
+    <form action="" [formGroup]="loginform">
+        <div class="inputBx">
+            <span>Email</span>
+            <input type="email" formControlName="email" placeholder="Enter your Email ">
+            <div *ngIf="this.loginform.get('email')?.errors && this.loginform.get('email')?.touched" ><p class="text-danger">Required field</p></div>
+
+        </div>
+        <div class="inputBx">
+            <span>Password</span>
+            <input type="password" formControlName="password" placeholder="Enter your Password ">
+            <div *ngIf="this.loginform.get('password')?.errors && this.loginform.get('password')?.touched" ><p class="text-danger">Required field</p></div>
+        </div>
+<div class="remember">
+    <label for=""><input type="checkbox">Remember me</label>
+</div>
+<button class="btn btn-success form-control" routerLink="homepage">Login</button>
+
+        <div class="inputBx">
+            <p>Don't have an account? <a routerLink="register">Sign up</a></p>
+        </div>
+    </form>
+</div>
+    </div>
+</section>

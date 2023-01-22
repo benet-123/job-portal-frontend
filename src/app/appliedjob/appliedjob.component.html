@@ -1,0 +1,36 @@
+<!-- without comtent -->
+<div class="container mt-5" *ngIf="emsg">
+    <div class="row">
+        <div class="col">
+            <img src="./../../assets/empty cart.gif"  alt="">
+            <h5 class="text-center mt-5">You haven't applied any jobs</h5>
+            <div class="text-center">
+                <button class="btn btn-warning" routerLink="/jobfeed">Apply now</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- //with content -->
+<div class="container">
+    <h2 class="text-center mt-5">My Jobs</h2>
+    <div class="row mt-4">
+        <div class="col" *ngFor="let jobs of applied">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{jobs.title}}</h5>
+                  <p>{{jobs.company}}<i class="fa-solid fa-star text-warning"></i> 5.0 </p>
+                  <p><i class="fa-sharp fa-solid fa-location-dot"></i> &nbsp;{{jobs.place}}</p>
+                  <div class="salary">
+                    <p> <i class="fa-solid fa-sack-dollar"></i> Salary:₹ {{jobs.salary}}/month</p>
+                    <p><i class="fa-solid fa-briefcase"></i> &nbsp;Full-time</p>
+  
+                  </div>
+                </div>
+              </div>
+  
+        </div>
+    </div>
+</div>

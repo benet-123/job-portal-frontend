@@ -1,0 +1,19 @@
+table th{
+    padding: 10px;
+     border: black 1px solid;
+}
+table{
+    margin-top: 5%;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+table td{
+    border:1px solid  black;
+    padding: 5px;
+}
+
+h5{
+    margin-top: 5%;
+}

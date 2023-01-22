@@ -1,0 +1,54 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./../../assets/logosimply.jpg"  alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active p-3" aria-current="page" routerLink="/appliedjobs">Applied Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-3" routerLink="wishlist">Wishlist</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-5 " type="search" placeholder="Search by location"   aria-label="Search">
+          <input class="form-control me-5" type="search" placeholder="Search by job post" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav> -->
+<app-header></app-header>
+  <!-- <pre>{{alljobs | json}}</pre> -->
+
+  <div class="container">
+ <h3 class="heading1">Recent Job Feed</h3>
+<div >  
+  <div class="container">
+    <div class="row mt-4">
+        <div *ngFor= "let jobs of alljobs | filter:searchterm :'title'" class="col" >
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{jobs.title}}</h5>
+                  <p>{{jobs.company}}<i class="fa-solid fa-star text-warning"></i> 5.0 </p>
+                  <p><i class="fa-sharp fa-solid fa-location-dot"></i> &nbsp;{{jobs.place}}</p>
+                  <div class="salary">
+                    <p> <i class="fa-solid fa-sack-dollar"></i> Salary:₹{{jobs.salary}}/month</p>
+                    <p><i class="fa-solid fa-briefcase"></i> &nbsp;Full-time</p>
+                    <button class="btn btn-outline-success" (click)="addtoapplied(jobs)">Apply</button>
+                    <button class="btn btn-success ms-3"  (click)="addtowishlist(jobs)">Save</button>
+  
+                  </div>
+                </div>
+              </div>
+  
+        </div>
+    </div>
+</div>
+
+  
+</div>
+
+  </div>

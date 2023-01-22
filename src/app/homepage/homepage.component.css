@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Dosis:wght@200&family=Great+Vibes&family=Moon+Dance&family=Parisienne&family=Pinyon+Script&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+.navbar a img{
+    width: 70px;
+    height: 50px;
+}
+#heading1{
+    margin-top:2%;
+}
+.img1{
+    width:100%;
+    display: inline-block;
+}
+.heading1{
+    margin-top: -18%;
+    color: white;
+    margin-left:41%;
+    line-height: 104px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 73px;
+
+}
+.p1{
+    color:white;
+    text-align: justify;
+}
+.s1{
+    margin-left: 39%;
+    line-height: 35px;
+}
+.side1{
+    width: 100%;
+    height: 328px;
+}
+.section2{
+    margin-top: 10%;
+}
+.p2{
+    text-align: justify;
+    line-height: 26px;
+}
+.heading2{
+    margin-top: 3%;
+    text-align: center;
+}
+.img2{
+    width: 100%;
+    height: 337px;
+    display: inline-block;
+    display: flex;
+}
+.divnew{
+    width: 60%;
+    height: 236px;
+    background-color:white;
+    margin-left: 21%;
+    /* display: inline-block; */
+    /* display: flex; */
+   margin-top: -182px;
+   position: relative;
+
+}
+.heading3{
+    margin:20px;
+    line-height: 10px;
+    margin-top: 1%;
+
+}
+.p3{
+    line-height: 26px;
+
+}
+#footercol{
+    margin-top: 5%;
+}
+.links{
+    line-height:36px;
+
+}
+
+@media(max-width:768px){
+    .heading1{
+        margin-top: -130px;
+        color: white;
+        font-size: 24px;
+    
+    }
+    .s1{
+        margin-left: 0;
+        line-height:10px ;
+    }
+    .p1{
+        margin-top: -45px;
+        font-size: 12px;
+    }
+    .side1{
+        height: 200px;
+        width: 100%;
+    }
+    .heading4{
+        font-size: 24px;
+    }
+    .p3{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .divnew{
+        margin-top: -278px;
+        height:75% ;
+    }
+    .heading2{
+        font-size: 25px;
+    }
+    .p2{
+        font-size: 14px;
+    }
+}
